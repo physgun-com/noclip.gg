@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --neutral-50: 248, 250, 252;
+        --neutral-100: 241, 245, 249;
+        --neutral-200: 226, 232, 240;
+        --neutral-300: 203, 213, 225;
+        --neutral-400: 148, 163, 184;
+        --neutral-500: 100, 116, 139;
+        --neutral-600: 71, 85, 105;
+        --neutral-700: 51, 65, 85;
+        --neutral-800: 30, 41, 59;
+        --neutral-900: 15, 23, 42;
+
+        --primary-50: 245, 243, 255;
+        --primary-100: 237, 233, 254;
+        --primary-200: 221, 214, 254;
+        --primary-300: 196, 181, 253;
+        --primary-400: 167, 139, 250;
+        --primary-500: 139, 92, 246;
+        --primary-600: 124, 58, 237;
+        --primary-700: 109, 40, 217;
+        --primary-800: 91, 33, 182;
+        --primary-900: 76, 29, 149;
+
+        --danger-50: 254, 242, 242;
+        --danger-100: 254, 226, 226;
+        --danger-200: 254, 202, 202;
+        --danger-300: 252, 165, 165;
+        --danger-400: 248, 113, 113;
+        --danger-500: 239, 68, 68;
+        --danger-600: 220, 38, 38;
+        --danger-700: 185, 28, 28;
+        --danger-800: 153, 27, 27;
+        --danger-900: 127, 29, 29;
+    }
+}

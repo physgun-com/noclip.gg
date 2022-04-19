@@ -1,0 +1,155 @@
+---
+import Logo from '../components/Logo.astro';
+import Annotation from '../components/Annotation.astro';
+import '../styles/base.css';
+import HomeInput from '../components/HomeInput.vue'
+import Category from '../components/partials/Category.vue'
+import User from '../components/partials/User.vue'
+let title = 'Noclip - The All-in-One Solution for your Garry\'s Mod Server.';
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Noclip">
+	<meta name="author" content="Noclip">
+	<meta name="og:type" content="website">
+	<meta name="robots" content="index, follow">
+	<meta name="og:brand" content="Noclip">
+	<meta name="theme-color" content="#8b5cf6">
+	<meta name="msapplication-navbutton-color" content="#8b5cf6">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#8b5cf6">
+
+	<meta property="og:title" content="Noclip - The All-in-One Solution for your Garry's Mod Server." />
+	<meta property="og:description" content="Noclip makes growing your Garry's Mod server easier than ever with our built-in store, forums, loading screeen, and more!" />
+	<meta name="description" content="Noclip makes growing your Garry's Mod server easier than ever with our built-in store, forums, loading screeen, and more!" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://noclip.me/assets/steam_image.png" /> 
+    <meta property="og:url" content="http://noclip.me" />
+</head>
+<body class="antialiased text-neutral-400 bg-neutral-900">
+	<main>
+		<section class="mb-20 space-y-20 overflow-hidden md:space-y-40">
+			<header class="relative h-[48rem]">
+				<div class="px-4 sm:px-6 md:px-8">
+					<div class="absolute inset-0 w-full h-full bg-primary-500 animate-pulse"></div>
+					<div style="background-image: url('/tile.svg');" class="absolute inset-0 bg-center text-primary-800"></div>
+					<div class="absolute inset-y-0 -inset-x-1/4 bg-gradient-radial from-transparent via-neutral-900 to-neutral-900"></div>
+					<div style="background-image: url('/beams.png'); background-size: 80rem;" class="absolute inset-0 bg-no-repeat opacity-75 bottom-10"></div>
+
+					<!-- <nav class="relative flex items-center justify-between pt-6 text-sm font-semibold leading-6 lg:pt-8 text-neutral-200">
+						<Logo height={40} width={40} />
+
+						<div class="flex items-center">
+							<div class="items-center hidden md:flex">
+								<ul class="flex items-center space-x-8">
+									<li>
+										<a class="inline-flex items-center justify-center px-3 text-sm font-semibold text-white rounded-lg focus:outline-none h-9 bg-primary-500 highlight-white/20 hover:bg-primary-400" href="/test">Get Started Free</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav> -->
+
+					<div class="relative max-w-5xl pt-20 mx-auto sm:pt-24 lg:pt-64">
+						<h1 class="text-4xl font-extrabold tracking-tight text-center text-white sm:text-5xl lg:text-6xl">
+						The creative web platform for your game server
+						</h1>
+						<p class="max-w-3xl mx-auto mt-6 text-lg text-center text-neutral-400">
+						Noclip is your sandbox. In it, grow your community with ease using the integrated features and customization to take control.
+						</p>
+
+						<div class="flex items-center justify-center mt-6 space-x-6 text-sm sm:mt-10">
+							<HomeInput  client:load />
+						</div>
+
+						<div class="flex items-center justify-between mt-10 space-x-6 text-sm sm:mt-16">
+							<div class="flex flex-col">
+								<span class="text-2xl font-bold text-white">5657</span>
+								<p class="text-neutral-400">Users signed up</p>
+							</div>
+							<div class="flex flex-col">
+								<span class="text-2xl font-bold text-white">1126</span>
+								<p class="text-neutral-400">Communities using Noclip</p>
+							</div>
+							<div class="flex flex-col">
+								<span class="text-2xl font-bold text-white">311</span>
+								<p class="text-neutral-400">Users upgraded to Rainbow</p>
+							</div>
+							<div class="flex flex-col">
+								<span class="text-2xl font-bold text-white">$13,000</span>
+								<p class="text-neutral-400">Paid out to communities</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<div class="container px-8 mx-auto">
+				<div class="relative items-center grid-cols-2 place-items-center md:grid">
+					<div class="relative z-1 lg:pr-16">
+						<Annotation classes="text-primary-500 h-8 w-8" />
+						<div class="mt-2 mb-1 space-y-2 sm:mb-2">
+							<div class="font-mono text-xs text-primary-400 sm:text-sm">
+								Forums designed to please
+							</div>
+							<div class="font-semibold text-white sm:text-2xl lg:text-lg xl:text-xl">
+								The forums for thriving communities
+							</div>
+
+							<div class="max-w-md mb-2 text-sm text-neutral-400 sm:mb-3 sm:text-base">
+								Our forum is built to look good, feel good, and most importantly bring your community to one unified place.
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<Category />
+					</div>
+				</div>
+			</div>
+
+			<div class="container px-8 mx-auto">
+				<div class="relative items-center grid-cols-2 place-items-center md:grid">
+					<div class="w-full">
+						<User />
+					</div>
+
+					<div class="relative z-1 lg:pl-16">
+						<Annotation classes="text-primary-500 h-8 w-8" />
+						<div class="mt-2 mb-1 space-y-2 sm:mb-2">
+							<div class="font-mono text-xs text-primary-400 sm:text-sm">
+								Beautiful design
+							</div>
+							<div class="font-semibold text-white sm:text-2xl lg:text-lg xl:text-xl">
+								Designed with style in mind
+							</div>
+
+							<div class="max-w-md mb-2 text-sm text-neutral-400 sm:mb-3 sm:text-base">
+								So many platforms have a dated look, we bring your community in the 21st centry with our sleek and slick designs.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<header class="relative h-[48rem] overflow-hidden">
+				<div class="px-4 overflow-hidden sm:px-6 md:px-8">
+					<div class="absolute inset-0 w-full h-full bg-gradient-to-b to-primary-500 via-sky-500 from-rose-500 animate-pulse"></div>
+					<div style="background-image: url('/tile.svg');" class="absolute inset-0 bg-center text-primary-800"></div>
+					<div class="absolute inset-y-0 -inset-x-1/4 bg-gradient-radial from-transparent via-neutral-900 to-neutral-900"></div>
+
+					<div class="relative max-w-5xl pt-20 mx-auto sm:pt-24 lg:pt-64">
+
+					</div>
+				</div>
+			</header>
+		</section>
+	</main>
+</body>
+</html>
