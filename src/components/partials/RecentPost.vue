@@ -19,15 +19,14 @@
                 </div>
 
                 <div class="flex items-center px-4 py-2 text-neutral-400">
-                    <a href="http://kings.noclip.test/members/aOcRIcw8MHpi9Gkn">
+                    <a href="#">
                         <img class="object-cover w-16 h-16 rounded-full pointer-events-none select-none"
                             url="/avatar.jpg" alt="atlas" src="/avatar.jpg" loading="lazy">
                     </a>
 
                     <div class="flex flex-col ml-4">
                         <div>Newest Member</div>
-                        <a href="http://kings.noclip.test/members/aOcRIcw8MHpi9Gkn"
-                            style="color: #ffffff; text-shadow: 0 0 4px #ffe500;">
+                        <a href="#" style="color: #ffffff; text-shadow: 0 0 4px #ffe500;">
                             atlas
                         </a>
 
