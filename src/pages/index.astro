@@ -5,6 +5,7 @@ import '../styles/base.css';
 import HomeInput from '../components/HomeInput.vue'
 import Category from '../components/partials/Category.vue'
 import User from '../components/partials/User.vue'
+import Store from '../components/partials/Store.vue'
 let title = 'Noclip - The All-in-One Solution for your Garry\'s Mod Server.';
 ---
 <html lang="en">
@@ -13,7 +14,7 @@ let title = 'Noclip - The All-in-One Solution for your Garry\'s Mod Server.';
 	<meta name="viewport" content="width=device-width">
 	<title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="/logo.png" />
 
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="Noclip">
@@ -138,17 +139,30 @@ let title = 'Noclip - The All-in-One Solution for your Garry\'s Mod Server.';
 				</div>
 			</div>
 
-			<header class="relative h-[48rem] overflow-hidden">
-				<div class="px-4 overflow-hidden sm:px-6 md:px-8">
-					<div class="absolute inset-0 w-full h-full bg-gradient-to-b to-primary-500 via-sky-500 from-rose-500 animate-pulse"></div>
-					<div style="background-image: url('/tile.svg');" class="absolute inset-0 bg-center text-primary-800"></div>
-					<div class="absolute inset-y-0 -inset-x-1/4 bg-gradient-radial from-transparent via-neutral-900 to-neutral-900"></div>
+			<div class="container px-8 mx-auto">
+				<div class="relative items-center grid-cols-2 place-items-center md:grid">
+					<div class="relative z-1 lg:pr-16">
+						<Annotation classes="text-primary-500 h-8 w-8" />
+						<div class="mt-2 mb-1 space-y-2 sm:mb-2">
+							<div class="font-mono text-xs text-primary-400 sm:text-sm">
+								Bring in a new cash-flow
+							</div>
+							<div class="font-semibold text-white sm:text-2xl lg:text-lg xl:text-xl">
+								Monetize your community
+							</div>
 
-					<div class="relative max-w-5xl pt-20 mx-auto sm:pt-24 lg:pt-64">
+							<div class="max-w-md mb-2 text-sm text-neutral-400 sm:mb-3 sm:text-base">
+								Our store was specifically built for games and community members in mind. It's fast, simple and incredibly easy to find what
+								they're looking for.
+							</div>
+						</div>
+					</div>
 
+					<div>
+						<Store />
 					</div>
 				</div>
-			</header>
+			</div>
 		</section>
 	</main>
 </body>
