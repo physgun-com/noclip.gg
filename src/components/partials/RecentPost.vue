@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden md:block absolute transform z-[99] w-[320px] left-[60%] bottom-[-120px]">
+    <div class="hidden md:block absolute transform z-[99] w-[320px] left-[60%] bottom-[-120px] skew-y-2">
         <div class="overflow-hidden shadow-xl group rounded-xl bg-neutral-800 motion-safe:transition">
             <div class="relative z-20 divide-y divide-neutral-200/5 ">
                 <div class="relative flex p-4 overflow-hidden bg-neutral-900/10 motion-safe:transition">
