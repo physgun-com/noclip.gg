@@ -5,7 +5,7 @@
             <figure class="relative overflow-hidden pt-[8.5rem] select-none bg-neutral-800">
                 <div class="absolute inset-0 z-0 w-full h-full bg-neutral-600 animate-pulse"></div>
                 <div class="absolute inset-0 w-full h-full overflow-hidden">
-                    <img class="absolute inset-0 object-cover object-center w-full h-full" src="/store_bg.jpg"
+                    <img class="absolute inset-0 object-cover object-center w-full h-full" src="/store_bg.png"
                         alt="store bg">
                     <div
                         class="block absolute z-10 top-0 inset-x-0 h-[8.5rem] bg-gradient-to-b from-transparent to-neutral-800">
