@@ -37,4 +37,112 @@
         --danger-800: 153, 27, 27;
         --danger-900: 127, 29, 29;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @media(prefers-reduced-motion) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+    
+    @keyframes rainbowText {
+        0% {
+            color: #fc0303
+        }
+        17% {
+            color: #45f52a
+        }
+        34% {
+            color: #2a7bf5
+        }
+        51% {
+            color: #2af5e4
+        }
+        68% {
+            color: #c92af5
+        }
+        85% {
+            color: #f5dd2a
+        }
+        100% {
+            color: #66655d
+        }
+    }
+    
+    @keyframes rainbowTextShadow {
+        0% {
+            color: #fc0303
+        }
+        17% {
+            color: #45f52a
+        }
+        34% {
+            color: #2a7bf5
+        }
+        51% {
+            color: #2af5e4
+        }
+        68% {
+            color: #c92af5
+        }
+        85% {
+            color: #f5dd2a
+        }
+        100% {
+            color: #66655d
+        }
+    }
+    
+    @keyframes rainbowBorder {
+        0% {
+            border-color: #fc0303;
+        }
+        17% {
+            border-color: #45f52a;
+        }
+        34% {
+            border-color: #2a7bf5;
+        }
+        51% {
+            border-color: #2af5e4;
+        }
+        68% {
+            border-color: #c92af5;
+        }
+        85% {
+            border-color: #f5dd2a;
+        }
+        100% {
+            border-color: #66655d;
+        }
+    }
+    
+    @keyframes rainbowBackground {
+        0% { background-color: #fc0303; }
+        17% { background-color: #45f52a; }
+        34% { background-color: #2a7bf5; }
+        51% { background-color: #2af5e4; }
+        68% { background-color: #c92af5; }
+        85% { background-color: #f5dd2a; }
+        100% { background-color: #66655d; }
+    }
+    
+    .rainbow-background {
+        animation: rainbowBackground 3000ms cubic-bezier(.4,0,.2,1) infinite alternate;
+    }
+    
+    .rainbow-border {
+        @apply transition-all ring-0 border-2;
+    
+        animation: rainbowBorder 3000ms cubic-bezier(.4,0,.2,1) infinite alternate;
+    }
+    
+    .rainbow-text {
+        @apply transition-all;
+    
+        animation: rainbowText 3000ms cubic-bezier(.4,0,.2,1) infinite alternate;
+    }
 }
