@@ -1,0 +1,128 @@
+---
+import Avatar from '../assets/avatar.jpg'
+---
+
+<div class="relative overflow-hidden shadow-xl group rounded-xl bg-neutral-800 motion-safe:transition">
+    <div class="relative z-20 divide-y divide-neutral-200/5 ">
+        <div class="relative flex p-4 overflow-hidden bg-neutral-900/10 motion-safe:transition">
+            <div class="absolute top-0 right-0 w-full h-full overflow-hidden highlight-primary-50/5"></div>
+
+            <div class="flex flex-col">
+                <a href="#" class="relative z-10 font-medium truncate text-neutral-200">
+                    Official
+                </a>
+
+                <p class="relative z-10 text-sm break-words text-neutral-400">
+                    Official forums dedicated to announcements, news, information and feedback.</p>
+            </div>
+        </div>
+
+        <div class="relative grid grid-cols-6 overflow-hidden md:grid-cols-12 auto-cols-max">
+            <div class="flex items-center justify-center col-span-1 p-2">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500/10">
+                    <svg class="w-6 h-6 text-primary-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start justify-center col-span-3 p-2 md:col-span-7">
+                <a href="#" class="font-medium text-md text-neutral-200">
+                    Announcements
+                </a>
+
+                <p class="w-full truncate text-neutral-400">
+                    Here you will find news, information and updates related to the site.
+                </p>
+            </div>
+
+            <div class="flex-col items-center justify-center hidden col-span-1 p-2 text-center md:flex">
+                <p class="font-medium text-primary-500">
+                    1
+                </p>
+                <h6 class="text-neutral-400">
+                    Threads
+                </h6>
+            </div>
+
+            <div class="flex items-center justify-start col-span-2 p-2 overflow-hidden md:ol-span-2">
+                <img class="absolute inset-y-0 object-cover w-32 h-32 rounded-full pointer-events-none select-none -right-6 opacity-10"
+                    alt="atlas" src={Avatar} loading="lazy" style="top: -30px;">
+
+                <div class="relative ml-2 truncate whitespace-nowrap text-neutral-400">
+                    <a class="w-full truncate" href="#">
+                        Rules
+                    </a>
+                    <div class="block w-full truncate">
+                        By <a href="#" style="color: #ffffff; text-shadow: 0 0 4px #ffe500;">atlas</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div x-show="expanded" x-collapse=""
+            class="relative grid grid-cols-6 overflow-hidden md:grid-cols-12 auto-cols-max">
+            <div class="flex items-center justify-center col-span-1 p-2">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500/10">
+                    <svg class="w-6 h-6 text-primary-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start justify-center col-span-3 p-2 md:col-span-7">
+                <a href="#" class="font-medium text-md text-neutral-200">
+                    Feedback and Suggestions
+                </a>
+
+                <p class="w-full truncate text-neutral-400">
+                    Leave feedback or post suggestions to improve the site's quality.
+                </p>
+            </div>
+
+            <div class="flex-col items-center justify-center hidden col-span-1 p-2 text-center md:flex">
+                <p class="font-medium text-primary-500">
+                    0
+                </p>
+                <h6 class="text-neutral-400">
+                    Threads
+                </h6>
+            </div>
+
+            <div class="flex-col items-center justify-center hidden col-span-1 p-2 md:flex">
+                <p class="font-medium text-primary-500">
+                    0
+                </p>
+                <h6 class="text-neutral-400">
+                    Replies
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>

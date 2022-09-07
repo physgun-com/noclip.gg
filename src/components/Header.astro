@@ -1,5 +1,5 @@
 ---
-import Logo from "./src/assets/logo.svg";
+import Logo from "../assets/logo.svg";
 ---
 
 <div class="py-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,15 +8,22 @@ import Logo from "./src/assets/logo.svg";
       <div class="flex relative justify-between items-center">
         <aside class="flex flex-1 items-center">
           <div class="flex justify-between items-center w-full md:w-auto">
-            <a href="#">
+            <a href="/">
               <img class="h-10" src={Logo} alt="physgun logo" />
             </a>
             <div class="hidden -space-x-1 md:flex md:ml-10">
               <a
-                href="#"
+                href="#features"
                 class="inline-flex items-center border font-medium relative text-base px-4 py-2 rounded-md text-white border-transparent hover:text-neutral-300"
               >
                 <span>Features</span>
+              </a>
+              <a
+                href="https://chroma.noclip.me"
+                target="_blank"
+                class="inline-flex items-center border font-medium relative text-base px-4 py-2 rounded-md text-white border-transparent hover:text-neutral-300"
+              >
+                <span>Demo</span>
               </a>
             </div>
           </div>
@@ -26,17 +33,17 @@ import Logo from "./src/assets/logo.svg";
           class="hidden md:flex md:items-center md:space-x-2 transition-opacity"
         >
           <a
-            href="#"
+            href="https://noclip.me/login"
             class="inline-flex items-center border font-medium relative text-base px-4 py-2 rounded-md text-white border-transparent hover:text-neutral-300 transition-all"
           >
             <span>Sign in</span>
           </a>
 
           <a
-            href="#"
-            class="inline-flex items-center border font-medium relative text-base px-4 py-2 rounded-md text-white border-primary-700 bg-primary-600 hover:bg-primary-700 hover:border-primary-800 shadow-sm transition-all"
+            href="https://noclip.me/dashboard"
+            class="inline-flex items-center border font-medium relative text-base px-4 py-2 rounded-md text-white border-primary-600 bg-primary-500 hover:bg-primary-600 hover:border-primary-700 shadow-sm transition-all"
           >
-            <span>Start free trial</span>
+            <span>Create your community</span>
           </a>
         </aside>
       </div>

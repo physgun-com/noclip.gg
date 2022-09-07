@@ -1,0 +1,115 @@
+---
+import Avatar from '../assets/avatar.jpg'
+---
+
+<div class="relative z-10 overflow-hidden shadow-xl group rounded-xl bg-neutral-800 motion-safe:transition isolate">
+    <div class="relative z-20 ">
+        <div class="w-full h-full grid grid-cols-1 md:grid-cols-[200px,minmax(400px,1fr)]">
+            <aside
+                class="relative isolate overflow-hidden flex flex-col items-center break-words w-full h-full md:min-h-[22rem] p-4 space-y-2 md:border-r border-neutral-200/5 motion-safe:transition">
+                <img class="absolute inset-0 w-full h-full object-cover object-center max-h-[18rem] opacity-50"
+                    src={Avatar} alt="atlas">
+                <div
+                    class="block absolute z-10 inset-0 w-full h-full max-h-[18rem] bg-gradient-to-b from-transparent to-neutral-800">
+                </div>
+                <div
+                    class="block absolute z-10 inset-0 w-full h-full max-h-[18rem] bg-gradient-to-b from-transparent to-neutral-800">
+                </div>
+
+                <div class="relative z-40 text-center">
+                    <a href="http://noclip.me/users/atlas" class="h4 text-neutral-200"
+                        style="color: #ffffff; text-shadow: 0 0 4px #ffe500;">
+                        atlas
+                    </a>
+
+                    <p id="user-upgraded" class="text-sm text-neutral-400"><span
+                            style="color: rgb(133, 224, 203); text-shadow: rgb(133, 224, 203) 0px 1px 3px;">R</span><span
+                            style="color: rgb(133, 168, 224); text-shadow: rgb(133, 168, 224) 0px 1px 3px;">a</span><span
+                            style="color: rgb(175, 133, 224); text-shadow: rgb(175, 133, 224) 0px 1px 3px;">i</span><span
+                            style="color: rgb(224, 133, 194); text-shadow: rgb(224, 133, 194) 0px 1px 3px;">n</span><span
+                            style="color: rgb(224, 149, 133); text-shadow: rgb(224, 149, 133) 0px 1px 3px;">b</span><span
+                            style="color: rgb(220, 224, 133); text-shadow: rgb(220, 224, 133) 0px 1px 3px;">o</span><span
+                            style="color: rgb(142, 224, 133); text-shadow: rgb(142, 224, 133) 0px 1px 3px;">w</span>
+                    </p>
+
+                    <p id="user-title" class="text-xs text-neutral-400">
+                        The Creator
+                    </p>
+                </div>
+
+                <div class="relative z-40 w-24 h-24"></div>
+
+                <p id="role"
+                    class="relative z-40 px-2 text-sm border rounded-full text-neutral-400 border-neutral-200/5">
+                    Owner
+                </p>
+
+                <ul
+                    class="relative z-40 hidden w-full text-xs font-medium border divide-y rounded md:block border-neutral-200/5 divide-neutral-200/5 text-neutral-400">
+                    <li class="flex p-1">
+                        <div>Posts:</div>
+                        <div class="ml-auto">1</div>
+                    </li>
+                    <li class="flex p-1">
+                        <div>Comments:</div>
+                        <div class="ml-auto">0</div>
+                    </li>
+                    <li class="flex p-1">
+                        <div>Likes:</div>
+                        <div class="ml-auto">0</div>
+                    </li>
+                </ul>
+            </aside>
+
+
+            <article class="flex flex-col">
+                <header class="flex items-center p-4 py-2 text-xs text-neutral-400 md:text-sm">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
+                        <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
+                    </svg>
+                    <p class="ml-1">
+                        1 week ago
+                    </p>
+
+                    <a class="ml-auto" href="#KRrKrk0XMiwDEfcO" id="KRrKrk0XMiwDEfcO">
+                        # KRrKrk0XMiwDEfcO
+                    </a>
+                </header>
+
+                <div
+                    class="flex-grow p-4 prose break-words whitespace-normal prose-neutral dark:prose-invert max-w-none">
+                    <p class="text-neutral-400">
+                        Thank's so much for checking out my project. This is the official forums for anything
+                        related to questions, news, and support. If you'd like to create your own forums head over
+                        to: <a class="text-white hover:text-primary-500"
+                            href="https://noclip.me">https://noclip.me</a>
+
+                        Feel free to poke around!
+                    </p>
+                </div>
+            </article>
+
+            <footer class="flex p-4 text-sm border-t col-span-full border-neutral-200/5" likes="likes">
+                <div class="flex items-center text-success-500">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"
+                            d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="ml-1">0</p>
+                </div>
+
+                <div class="flex items-center ml-auto space-x-2">
+                    <a class="inline-flex items-center px-3 text-sm font-semibold rounded-lg group h-9 whitespace-nowrap focus:outline-none focus:ring-2 bg-neutral-700/75 text-neutral-100 hover:bg-neutral-600 hover:text-white focus:ring-neutral-500"
+                        href="#KRrKrk0XMiwDEfcO">
+                        Edit
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="absolute top-0 right-0 z-10 w-full h-full highlight-white/5 rounded-xl"></div>
+</div>
