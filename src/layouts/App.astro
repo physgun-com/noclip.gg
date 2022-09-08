@@ -14,13 +14,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<HeadCommon />
 		<HeadSEO frontmatter={frontmatter} canonicalUrl={canonicalURL} />
 		<title>
-			{frontmatter ? `${frontmatter?.title} 🚀 'Noclip'` : 'Noclip'}
+			{frontmatter ? `${frontmatter?.title}` : 'Noclip'}
 		</title>
 	</head>
 
 	<body class="realtive bg-neutral-900 bg-top bg-no-repeat bg-[length:120rem] lg:overflow-x-hidden">
 		<Header />
-		<main>
+		<main class={frontmatter ? 'prose prose-invert mx-auto mt-12' : ''}>
 			<slot />
 		</main>
 		<Footer />

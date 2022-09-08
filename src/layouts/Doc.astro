@@ -1,0 +1,63 @@
+---
+import '../assets/css/app.css'
+import HeadCommon from '../components/HeadCommon.astro';
+import HeadSEO from '../components/HeadSEO.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import clsx from 'clsx';
+import { navigation } from '../../config';
+
+const { frontmatter } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<html>
+	<head>
+		<HeadCommon />
+		<HeadSEO frontmatter={frontmatter} canonicalUrl={canonicalURL} />
+		<title>
+			{frontmatter ? `${frontmatter?.title}` : 'Noclip'}
+		</title>
+	</head>
+
+	<body class="realtive bg-neutral-900 bg-top bg-no-repeat bg-[length:120rem] lg:overflow-x-hidden">
+		<Header />
+		<main class="grid grid-cols-12 gap-4 min-h-screen w-full max-w-7xl mx-auto my-24">
+			<ul class="space-y-9 text-base lg:text-sm col-span-full md:col-span-2">
+				{navigation.map((section) => (
+				  <li id={section.title}>
+					<h2 class="font-display font-medium text-white">
+					  {section.title}
+					</h2>
+					<ul class="mt-2 space-y-2 border-l-2 border-neutral-800 lg:mt-4 lg:space-y-4 lg:border-neutral-700">
+					  {section.links.map((link) => (
+						<li id={link.href} class="relative">
+						  <a href={link.href}>
+							<div
+							  class={clsx(
+								'block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full',
+								{
+								  'font-semibold text-primary-500 before:bg-primary-500':
+									link.href === Astro.site?.pathname,
+								  'before:hidden hover:before:block text-neutral-400 before:bg-neutral-700 hover:text-neutral-300':
+									link.href !== Astro.site?.pathname,
+								}
+							  )}
+							>
+							  {link.title}
+							</div>
+						  </a>
+						</li>
+					  ))}
+					</ul>
+				  </li>
+				))}
+			  </ul>
+
+			<div class="col-span-full md:col-span-10 w-full h-full prose prose-invert">
+				<slot />
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

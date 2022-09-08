@@ -26,16 +26,50 @@ export const ALGOLIA = {
 };
 
 
-export const SIDEBAR = {
-	en: {
-		'Section Header': [
-			{ text: 'Introduction', link: 'en/introduction' },
-			{ text: 'Page 2', link: 'en/page-2' },
-			{ text: 'Page 3', link: 'en/page-3' },
-		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+export const navigation = [
+	{
+	  title: 'Introduction',
+	  links: [
+		{ title: 'Getting started', href: '/docs' },
+	  ],
 	},
-};
+	{
+	  title: 'Forums',
+	  links: [
+		{
+		  title: 'Categories',
+		  href: '/docs/forums/categories'
+		},
+		{
+		  title: 'Boards',
+		  href: '/docs/forums/boards',
+		},
+		{
+		  title: 'Threads',
+		  href: '/docs/forums/threads',
+		},
+		// {
+		//   title: 'Comments',
+		//   href: '/docs/forums/comments',
+		// },
+	  ],
+	},
+	{
+	  title: 'Store',
+	  links: [
+		// { title: 'Packages', href: '/docs/store/packages' },
+		{ title: 'Actions', href: '/docs/store/actions' },
+		{ title: 'Linking your store', href: '/docs/store/linking-your-store' },
+		{ title: 'Creating a package', href: '/docs/store/creating-a-package' }
+	  ],
+	},
+	{
+	  title: 'Domains',
+	  links: [
+		{ title: 'Custom Domains', href: '/docs/domains/custom-domains' },
+	  ],
+	},
+  ]
 
 export const FrontMatter = {
 	title: '',
