@@ -8,7 +8,7 @@ RUN go build -o sourcequery
 
 FROM registry.semaphoreci.com/golang:1.18 as runner
 
-COPY --from=builder "$APP_HOME"/sourcequery $APP_HOME
+COPY --from=builder . .
 
 EXPOSE 8010
 CMD ["./sourcequery"]

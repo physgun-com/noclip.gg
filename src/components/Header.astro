@@ -1,5 +1,6 @@
 ---
 import Logo from "../assets/logo.svg";
+import SiteSwitcher from "./SiteSwitcher.vue";
 ---
 
 <div class="py-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,15 +9,21 @@ import Logo from "../assets/logo.svg";
       <div class="flex relative justify-between items-center">
         <aside class="flex flex-1 items-center">
           <div class="flex justify-between items-center w-full md:w-auto">
-            <a href="/">
-              <img class="h-10" src={Logo} alt="physgun logo" />
-            </a>
-            <div class="hidden -space-x-1 md:flex md:ml-10">
+            <SiteSwitcher client:visible />
+
+            <div class="hidden -space-x-1 md:flex md:ml-4">
               <a
                 href="#features"
                 class="inline-flex items-center border font-medium relative text-base px-4 py-2 rounded-md text-white border-transparent hover:text-neutral-300"
               >
                 <span>Features</span>
+              </a>
+              <a
+                href="/docs"
+                target="_blank"
+                class="inline-flex items-center border font-medium relative text-base px-4 py-2 rounded-md text-white border-transparent hover:text-neutral-300"
+              >
+                <span>Documentation</span>
               </a>
               <a
                 href="https://chroma.noclip.me"
