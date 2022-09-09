@@ -1,3 +1,5 @@
+import Meta from './src/assets/meta.png'
+
 export const SITE = {
 	title: 'Noclip - The all-in-one platform for your gmod community.',
 	description: 'Noclip is an all-in-one platform for your garry\'s mod community featuring a donation store, forums, and loading screen.',
@@ -6,7 +8,7 @@ export const SITE = {
 
 export const OPEN_GRAPH = {
 	image: {
-		src: 'https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true',
+		src: Meta,
 		alt:
 			'astro logo on a starry expanse of space,' +
 			' with a purple saturn-like planet floating in the right foreground',
