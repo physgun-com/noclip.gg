@@ -5,7 +5,7 @@ export interface Props {
 	canonicalUrl
 }
 const { frontmatter, canonicalUrl } = Astro.props as Props;
-const formattedContentTitle = frontmatter?.title ? `${frontmatter?.title} 🚀 ${SITE.title}` : 'Nolip';
+const formattedContentTitle = frontmatter?.title ? `${frontmatter?.title} 🚀 ${SITE.title}` : 'Noclip';
 const imageSrc = frontmatter?.image?.src ?? OPEN_GRAPH.image.src;
 const canonicalImageSrc = new URL(imageSrc, Astro.site);
 const imageAlt = frontmatter?.image?.alt ?? OPEN_GRAPH.image.alt;
