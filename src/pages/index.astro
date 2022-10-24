@@ -1,177 +1,207 @@
 ---
-import '../styles/base.css';
-import Annotation from '../components/Annotation.astro'
-import HomeInput from '../components/HomeInput.vue'
-import Category from '../components/Category.astro'
-import User from '../components/User.astro'
-import RecentPost from '../components/RecentPost.astro'
-import Store from '../components/Store.astro'
-import Logo from '../components/Logo.astro'
-let title = 'Noclip - The creative web platform for your game server'
+import Category from "../components/Category.astro";
+import Checkout from "../components/Checkout.astro";
+import CubeTransparent from "../components/icons/CubeTransparent.astro";
+import Debit from "../components/icons/Debit.astro";
+import Lock from "../components/icons/Lock.astro";
+import Sparkles from "../components/icons/Sparkles.astro";
+import Post from "../components/Post.astro";
+import Purchase from "../components/Purchase.astro";
+import RecentPostWidget from "../components/RecentPostWidget.astro";
+import App from "../layouts/App.astro";
+
 ---
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/logo.png" />
+<App title="WIP">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="pt-10 sm:pt-16 lg:pt-0 lg:pb-14">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+        <div
+          class="mx-auto max-w-md sm:px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:pl-0 lg:text-left"
+        >
+          <div class="lg:py-24">
+            <h1
+              class="text-4xl pb-3 font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl"
+            >
+              <span class="block">The #1 solution</span>
+              <span class="block text-primary-500">for growing communities</span>
+            </h1>
+            <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
+              Noclip gives you the tools to build and pamper your community all for free.
+            </p>
 
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="Noclip">
-	<meta name="author" content="Noclip">
-	<meta name="og:type" content="website">
-	<meta name="robots" content="index, follow">
-	<meta name="og:brand" content="Noclip">
-	<meta name="theme-color" content="#8b5cf6">
-	<meta name="msapplication-navbutton-color" content="#8b5cf6">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#8b5cf6">
+            <div class="mt-6 sm:mt-8">
+              <div class="sm:mx-auto sm:max-w-xl lg:mx-0">
+                <div
+                  class="flex flex-wrap gap-x-4 gap-y-2 sm:justify-center lg:justify-start"
+                >
+                  <a
+                    href="https://noclip.me/dashboard"
+                    class="inline-flex items-center border font-medium relative text-base px-6 py-3 rounded-md text-white border-primary-700 bg-primary-500 hover:bg-primary-600 hover:border-primary-800 shadow-sm"
+                  >
+                    <span>Create your community</span>
+                  </a>
 
-	<meta property="og:title" content="Noclip - The #1 all-in-one forum for your game server" />
-	<meta property="og:description" content="Whether it's Garry's Mod, Sandbox, Rust, or Minecraft. Noclip is the perfect solution for your community." />
-	<meta name="description" content="Noclip is your sandbox. In it, grow your community with ease using the integrated features and customization to take control." />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://noclip.gg/steam_v2.png" /> 
-    <meta property="og:url" content="http://noclip.me" />
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Noclip -The creative web platform for your game server">
-	<meta name="twitter:description" content="Noclip is your sandbox. In it, grow your community with ease using the integrated features and customization to take control.">
-	<meta name="twitter:image" content="https://noclip.gg/steam_v2.png" />
-</head>
-<body class="antialiased text-neutral-400 bg-neutral-900">
-	<main>
-		<section class="mb-20 space-y-40 overflow-hidden">
-			<header class="relative h-[48rem]">
-				<div class="px-4 sm:px-6 md:px-8">
-					<div class="absolute inset-0 w-full h-full bg-primary-500 animate-pulse"></div>
-					<div style="background-image: url('/tile.svg');" class="absolute inset-0 bg-center text-primary-800"></div>
-					<div class="absolute inset-y-0 -inset-x-1/4 bg-gradient-radial from-transparent via-neutral-900 to-neutral-900"></div>
-					<div style="background-image: url('/beams.png'); background-size: 80rem;" class="absolute inset-0 bg-no-repeat opacity-75 bottom-10"></div>
+                  <a
+                    href="https://noclip.me/login"
+                    class="inline-flex items-center border font-medium relative text-base px-6 py-3 rounded-md text-neutral-50 border-neutral-700 bg-neutral-800 hover:bg-neutral-750 hover:text-neutral-100 shadow-sm"
+                  >
+                    Sign in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<nav class="relative flex items-center justify-between pt-6 text-sm font-semibold leading-6 lg:pt-8 text-neutral-200">
-						<Logo height={40} width={40} />
+        <div class="mt-12 lg:relative lg:m-0">
+          <div
+            class="px-4 mx-auto max-w-md sm:px-6 sm:max-w-2xl lg:px-0 overflow-hidden"
+          >
+            <div
+              class="w-full lg:absolute lg:inset-y-0 lg:top-1/2 lg:left-0 lg:h-4/5 lg:w-auto lg:max-w-none lg:-translate-y-1/2"
+            >
+              <div class="w-full h-full">
+                <div
+                  class="relative w-full h-full flex items-center justify-center lg:animate-fade-in-hero lg:mask-gradient"
+                >
+                  <Category />
+                  <RecentPostWidget />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<div class="flex items-center">
-							<div class="items-center hidden md:flex">
-								<ul class="flex items-center space-x-8">
-									<li>
-										<a class="inline-flex items-center justify-center px-3 text-sm font-semibold text-white rounded-lg focus:outline-none h-9 bg-primary-500 highlight-white/20 hover:bg-primary-400" href="https://noclip.me">Get Started Free</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
+  <section class="overflow-hidden py-16 lg:py-24">
+    <a id="features" href="#features"></a>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative">
+        <h2 class="text-neutral-50 text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+          The forums and store for growing communities
+        </h2>
+        <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-neutral-400">
+          Let's face it, the prices for forums and donation stores can simply be way too much for a
+          community starting off. Noclip offers a completely free setup with affordable upgrades.
+        </p>
+      </div>
 
-					<div class="relative max-w-5xl pt-20 mx-auto sm:pt-48 lg:pt-64">
-						<h1 class="text-4xl font-extrabold tracking-tight text-center text-white sm:text-5xl lg:text-6xl">
-						The creative web platform for your game server
-						</h1>
-						<p class="max-w-3xl mx-auto mt-6 text-lg text-center text-neutral-400">
-						Noclip is your sandbox. In it, grow your community with ease using the integrated features and customization to take control.
-						</p>
+      <div class="relative mt-12 lg:mt-32 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+        <div class="relative">
+          <h3 class="text-neutral-50 text-2xl font-extrabold tracking-tight sm:text-3xl">
+            Your forums doesn't have to be ugly
+          </h3>
+          <p class="mt-3 text-lg text-gray-400">
+            We've spent countless hours designing the best looking forum on the market, not to mention it's completely free!
+          </p>
 
-						<div class="flex flex-col items-center justify-center mt-6 text-sm md:flex-row sm:mt-10">
-							<HomeInput  client:load />
-						</div>
+          <dl class="mt-10 space-y-10">
+            <div class="relative">
+              <dt>
+                <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary-500 text-primary-50">
+                  <Sparkles className="w-6 h-6 text-primary-50" />
+                </div>
+                <h6 class="text-neutral-50 ml-16 text-lg font-medium leading-6">
+                  Make it truly yours
+                </h6>
+              </dt>
 
-						<div class="flex flex-col flex-wrap items-center justify-center px-20 mx-auto mt-10 space-y-4 text-sm md:justify-between md:px-0 md:space-y-0 md:flex-row md:space-x-6 sm:mt-16">
-							<div class="inline-block w-full md:w-auto">
-								<span class="block text-2xl font-bold text-white">8103</span>
-								<p class="text-neutral-400">Users signed up</p>
-							</div>
-							<div class="inline-block w-full md:w-auto">
-								<span class="block text-2xl font-bold text-white ">2719</span>
-								<p class="text-neutral-400">Communities using Noclip</p>
-							</div>
-							<div class="inline-block w-full md:w-auto">
-								<span class="block text-2xl font-bold text-white ">410</span>
-								<p class="text-neutral-400">Users upgraded to Rainbow</p>
-							</div>
-							<div class="inline-block w-full md:w-auto">
-								<span class="block text-2xl font-bold text-white ">$16,623</span>
-								<p class="text-neutral-400">Paid out to communities</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-			
-			<div class="container px-8 mx-auto h-96">
-				<div class="relative grid items-center grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 place-items-center">
-					<div class="relative z-1 lg:pr-16">
-						<Annotation classes="text-primary-500 h-8 w-8" />
-						<div class="mt-2 mb-1 space-y-2 sm:mb-2">
-							<div class="font-mono text-xs text-primary-400 sm:text-sm">
-								Forums designed to please
-							</div>
-							<div class="font-semibold text-white sm:text-2xl lg:text-lg xl:text-xl">
-								The forums for thriving communities
-							</div>
+              <dd class="mt-2 ml-16 text-base text-gray-400">
+                We mean it when we say make it yours, Noclip offers dozens of
+                exclusive customizations other platforms just simply don't have.
+              </dd>
+            </div>
 
-							<div class="max-w-md mb-2 text-sm text-neutral-400 sm:mb-3 sm:text-base">
-								Our forum is built to look good, feel good, and most importantly bring your community to one unified place.
-							</div>
-						</div>
-					</div>
+            <div class="relative">
+              <dt>
+                <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary-500 text-primary-50">
+                  <CubeTransparent className="w-6 h-6 text-primary-50" />
+                </div>
+                <h6 class="text-neutral-50 ml-16 text-lg font-medium leading-6">
+                  Forums designed to please
+                </h6>
+              </dt>
 
-					<div class="relative w-full h-full">
-						<Category />
+              <dd class="mt-2 ml-16 text-base text-gray-400">
+                We've handpicked many design choices and features from custom communities,
+                giving you a truly unique experience. Widgets, user customizations, you name it.
+              </dd>
+            </div>
+          </dl>
 
+        </div>
 
-						<RecentPost />
-					</div>
-				</div>
-			</div>
+        <div class="mt-10 px-4 lg:mt-0 lg:px-0">
+          <div class="flex flex-col gap-4 lg:gap-8">
+            <div class="w-full flex-1 self-start pb-1 shadow-lg">
+              <div class="relative">
+                <Post />
+                <RecentPostWidget />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="container px-8 mx-auto">
-				<div class="relative grid items-center grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 place-items-center">
-					<div class="w-full">
-						<User />
-					</div>
+      <div class="relative mt-12 lg:mt-32 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+        <div class="mt-10 px-4 lg:mt-0 lg:px-0">
+          <div class="flex flex-col gap-4 lg:gap-8">
+            <div class="w-full flex-1 self-start pb-1 shadow-lg">
+              <div class="relative">
+                <Checkout />
+                <Purchase />
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<div class="relative z-1 lg:pl-16">
-						<Annotation classes="text-primary-500 h-8 w-8" />
-						<div class="mt-2 mb-1 space-y-2 sm:mb-2">
-							<div class="font-mono text-xs text-primary-400 sm:text-sm">
-								Beautiful design
-							</div>
-							<div class="font-semibold text-white sm:text-2xl lg:text-lg xl:text-xl">
-								Designed with style in mind
-							</div>
+        <div class="relative">
+          <h3 class="text-neutral-50 text-2xl font-extrabold tracking-tight sm:text-3xl">
+            And your store doesn't have to either!
+          </h3>
+          <p class="mt-3 text-lg text-gray-400">
+            Getting a store setup is so much work, making it look good? Even harder. Noclip truly takes all the
+            pain away and gives you finite control while still getting to do all the fun stuff.
+          </p>
 
-							<div class="max-w-md mb-2 text-sm text-neutral-400 sm:mb-3 sm:text-base">
-								So many platforms have a dated look, we bring your community in the 21st century with our sleek and slick designs.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+          <dl class="mt-10 space-y-10">
+            <div class="relative">
+              <dt>
+                <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary-500 text-primary-50">
+                  <Lock className="w-6 h-6 text-primary-50" />
+                </div>
+                <h6 class="text-neutral-50 ml-16 text-lg font-medium leading-6">
+                  Secure by design
+                </h6>
+              </dt>
 
-			<div class="container px-8 mx-auto">
-				<div class="relative grid items-center grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 place-items-center">
-					<div class="relative z-1 lg:pr-16">
-						<Annotation classes="text-primary-500 h-8 w-8" />
-						<div class="mt-2 mb-1 space-y-2 sm:mb-2">
-							<div class="font-mono text-xs text-primary-400 sm:text-sm">
-								Bring in a new cash-flow
-							</div>
-							<div class="font-semibold text-white sm:text-2xl lg:text-lg xl:text-xl">
-								Monetize your community
-							</div>
+              <dd class="mt-2 ml-16 text-base text-gray-400">
+                Security is pretty important for your server, that's why we ensure our integrations has absolutely 0.
+                Our integrations are open source, feel free to use and abuse them for added peace of mind.
+              </dd>
+            </div>
 
-							<div class="max-w-md mb-2 text-sm text-neutral-400 sm:mb-3 sm:text-base">
-								Our store was specifically built for games and community members in mind. It's fast, simple and incredibly easy to find what
-								they're looking for.
-							</div>
-						</div>
-					</div>
+            <div class="relative">
+              <dt>
+                <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary-500 text-primary-50">
+                  <Debit className="w-6 h-6 text-primary-50" />
+                </div>
+                <h6 class="text-neutral-50 ml-16 text-lg font-medium leading-6">
+                  Stripe & Paypal friendly
+                </h6>
+              </dt>
 
-					<div>
-						<Store />
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-</body>
-</html>
+              <dd class="mt-2 ml-16 text-base text-gray-400">
+                Noclip can accept credit cards, banks, paypal and more with our custom built store.
+              </dd>
+            </div>
+          </dl>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</App>

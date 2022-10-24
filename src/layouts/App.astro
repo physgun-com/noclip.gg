@@ -1,0 +1,28 @@
+---
+import '../assets/css/app.css'
+import HeadCommon from '../components/HeadCommon.astro';
+import HeadSEO from '../components/HeadSEO.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { frontmatter } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<html>
+	<head>
+		<HeadCommon />
+		<HeadSEO frontmatter={frontmatter} canonicalUrl={canonicalURL} />
+		<title>
+			{frontmatter ? `${frontmatter?.title}` : 'Noclip'}
+		</title>
+	</head>
+
+	<body class="realtive bg-neutral-900 bg-top bg-no-repeat bg-[length:120rem] lg:overflow-x-hidden">
+		<Header />
+		<main class={frontmatter ? 'prose prose-invert mx-auto mt-12' : ''}>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

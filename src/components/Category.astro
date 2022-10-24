@@ -1,3 +1,7 @@
+---
+import Avatar from '../assets/avatar.jpg'
+---
+
 <div class="relative overflow-hidden shadow-xl group rounded-xl bg-neutral-800 motion-safe:transition">
     <div class="relative z-20 divide-y divide-neutral-200/5 ">
         <div class="relative flex p-4 overflow-hidden bg-neutral-900/10 motion-safe:transition">
@@ -8,7 +12,7 @@
                     Official
                 </a>
 
-                <p class="relative z-10 text-sm break-words whitespace-pre-line dark:text-neutral-400">
+                <p class="relative z-10 text-sm break-words text-neutral-400">
                     Official forums dedicated to announcements, news, information and feedback.</p>
             </div>
         </div>
@@ -54,18 +58,9 @@
                 </h6>
             </div>
 
-            <div class="flex-col items-center justify-center hidden col-span-1 p-2 md:flex">
-                <p class="font-medium text-primary-500">
-                    0
-                </p>
-                <h6 class="text-neutral-400">
-                    Replies
-                </h6>
-            </div>
-
             <div class="flex items-center justify-start col-span-2 p-2 overflow-hidden md:ol-span-2">
                 <img class="absolute inset-y-0 object-cover w-32 h-32 rounded-full pointer-events-none select-none -right-6 opacity-10"
-                    url="/avatar.jpg" alt="atlas" src="/avatar.jpg" loading="lazy" style="top: -30px;">
+                    alt="atlas" src={Avatar} loading="lazy" style="top: -30px;">
 
                 <div class="relative ml-2 truncate whitespace-nowrap text-neutral-400">
                     <a class="w-full truncate" href="#">
@@ -128,8 +123,6 @@
                     Replies
                 </h6>
             </div>
-
-
         </div>
     </div>
 </div>

@@ -1,0 +1,135 @@
+<div
+    class="w-full relative group rounded-xl bg-neutral-900 backdrop-blur-lg motion-safe:transition shadow-xl ring-1 ring-neutral-200/5 text-left sm:w-full sm:mx-auto sm:max-w-2xl"
+>
+    <div class="relative z-20">
+        <figure
+            class="relative overflow-hidden pt-[8.5rem] select-none rounded-t-lg"
+        >
+            <div class="absolute inset-0 w-full h-full overflow-hidden">
+                <img
+                    loading="lazy"
+                    class="absolute inset-0 w-full h-full object-cover object-center mask-gradient opaci"
+                    src="https://cdn.noclip.gg/p1p2dE_v_8nYK4cg/bKJQHjsN2udFrisORQgzmbBAlEst2g-metaZTJmYzJiZTI2NTYwNGU3ZmI1YjNkMGE2ODI0MmUyZjEuanBlZw==-.jpg"
+                    alt="example package picture"
+                />
+            </div>
+        </figure>
+
+        <div>
+            <div class="px-4 py-2">
+                <div
+                    class="grid grid-cols-1 filament-forms-component-container gap-6"
+                >
+                    <div
+                        class="col-span-1"
+                    >
+                        <div class="filament-forms-field-wrapper">
+                            <div class="space-y-2">
+                                <div
+                                    class="flex items-center justify-between space-x-2 rtl:space-x-reverse"
+                                >
+                                    <label
+                                        class="filament-forms-field-wrapper-label inline-flex items-center space-x-3 rtl:space-x-reverse"
+                                        for="email"
+                                    >
+                                        <span
+                                            class="text-sm font-medium leading-4 text-gray-300"
+                                        >
+                                            Email
+
+                                            <sup
+                                                class="font-medium text-danger-700"
+                                                >*</sup
+                                            >
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div
+                                    class="filament-forms-text-input-component flex items-center space-x-2 rtl:space-x-reverse group"
+                                >
+                                    <div class="flex-1">
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            required=""
+                                            class="block w-full transition duration-75 rounded-lg shadow-sm focus:ring-1 focus:ring-inset focus:ring-primary-500 disabled:opacity-70 bg-gray-700 text-white focus:border-primary-500 border-gray-600"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="hidden"
+                    >
+                    </div>
+                    <div
+                        class="col-span-1"
+                    >
+                        <div class="filament-forms-field-wrapper">
+                            <div class="space-y-2">
+                                <div
+                                    class="flex items-center justify-between space-x-2 rtl:space-x-reverse"
+                                >
+                                    <label
+                                        class="filament-forms-field-wrapper-label inline-flex items-center space-x-3 rtl:space-x-reverse"
+                                        for="coupon"
+                                    >
+                                        <span
+                                            class="text-sm font-medium leading-4 text-gray-300"
+                                        >
+                                            Coupon
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div
+                                    class="filament-forms-text-input-component flex items-center space-x-2 rtl:space-x-reverse group"
+                                >
+                                    <div class="flex-1">
+                                        <input
+                                            x-data="{}"
+                                            type="text"
+                                            id="coupon"
+                                            class="block w-full transition duration-75 rounded-lg shadow-sm focus:ring-1 focus:ring-inset focus:ring-primary-500 disabled:opacity-70 bg-gray-700 text-white focus:border-primary-500 border-gray-600"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    type="submit"
+                    class="text-sm text-white focus:outline-none font-semibold h-9 px-3 rounded-lg inline-flex items-center justify-center bg-primary-500 highlight-white/20 hover:bg-primary-400 relative w-full justify-center mt-4"
+                    style="text-shadow: black 0 0 2px"
+                >
+                    Checkout
+                </button>
+            </div>
+        </div>
+        <div class="px-4 py-2 flex flex-col" x-data="{ expanded: false }">
+            <h2 class="text-neutral-50 text-lg font-medium">
+                Permanent AK-47
+            </h2>
+
+            <div
+                class="prose prose-neutral prose-invert max-w-none overflow-y-auto max-h-[18rem]"
+            >
+                <p>
+                    Purchase this package to receive a permanent AK-47! <strong
+                        >Please wait up to 2 minutes for the server to process
+                        your purchase.</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="absolute top-0 right-0 w-full h-full z-10 highlight-white/5 rounded-xl"
+    >
+    </div>
+</div>

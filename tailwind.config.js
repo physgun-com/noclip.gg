@@ -30,7 +30,6 @@ module.exports = {
     "./public/**/*.{html,js,astro,vue,ts}",
     "./dist/**/*.{html,js,astro,vue,ts}",
   ],
-    darkMode: 'class',
     theme: {
         extend: {
             colors: {
