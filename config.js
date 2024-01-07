@@ -18,7 +18,7 @@ export const OPEN_GRAPH = {
 
 export const GITHUB_EDIT_URL = `https://github.com/noclip-gg/site/tree/main/docs`;
 
-export const COMMUNITY_INVITE_URL = `https://discord.com/invite/gsAFqh7mj9`;
+export const COMMUNITY_INVITE_URL = `https://discord.gg/physgun`;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
